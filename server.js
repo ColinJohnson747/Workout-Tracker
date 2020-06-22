@@ -13,10 +13,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-});
+mongoose.connect(
+  "mongodb+srv://colinjohnson747:<neRzxM5EwhqgUKxMV>@cluster0-r7x7a.mongodb.net/<workout>?retryWrites=true&w=majority" ||
+    "mongodb://localhost/workout",
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+  }
+);
 
 // routes
 app.use(require("./routes/api.js"));

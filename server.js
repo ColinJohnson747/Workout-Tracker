@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb+srv://colinjohnson747:<neRzxM5EwhqgUKxMV>@cluster0-r7x7a.mongodb.net/<workout>?retryWrites=true&w=majority" ||
+  "mongodb+srv://colinjohnson747:neRzxM5EwhqgUKxMV@cluster0-r7x7a.mongodb.net/<workout>?retryWrites=true&w=majority" ||
     "mongodb://localhost/workout",
   {
     useNewUrlParser: true,
